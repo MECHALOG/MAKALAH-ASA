@@ -1,21 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# ==========================================
 # 1. DATA HASIL EKSPERIMEN
-# (Silakan sesuaikan angkanya dengan hasil output program utamamu)
-# ==========================================
 algoritma = ['Greedy', 'Dynamic\nProgramming', 'Farthest\nStrategy']
 
-# Contoh data Total Nilai Survival (semakin tinggi semakin baik)
+
 total_nilai = [495, 525, 510]
 
-# Contoh data Waktu Eksekusi dalam milidetik (semakin rendah semakin baik)
+
 waktu_eksekusi = [0.008, 0.342, 0.045]
 
-# ==========================================
+
 # 2. PENGATURAN VISUALISASI GRAFIK
-# ==========================================
 # Membuat area gambar dengan 1 baris dan 2 kolom (bersebelahan)
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
@@ -48,9 +44,7 @@ for bar in bars2:
     ax2.text(bar.get_x() + bar.get_width()/2, yval + 0.005, f"{yval} ms",
              ha='center', va='bottom', fontweight='bold', fontsize=12)
 
-# ==========================================
 # 3. MENAMPILKAN GRAFIK
-# ==========================================
 # Merapikan jarak antar grafik agar tidak bertumpuk
 plt.tight_layout()
 

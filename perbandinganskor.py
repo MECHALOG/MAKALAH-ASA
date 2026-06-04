@@ -1,10 +1,5 @@
 import matplotlib.pyplot as plt
 
-# ==========================================
-# 1. DATA AKUMULASI (X = Kapasitas, Y = Nilai)
-# Titik awal selalu (0,0) yang merepresentasikan tas kosong.
-# ==========================================
-
 # Algoritma Greedy (Fokus rasio v/w tertinggi)
 greedy_w = [0, 2, 6, 11, 21, 27, 35, 45]
 greedy_v = [0, 70, 145, 240, 325, 390, 445, 495]
@@ -19,10 +14,8 @@ dp_labels = ['Start', 'Gloo Wall', 'Medkit', 'Inhaler', 'Granat', 'Vest', 'Landm
 farthest_w = [0, 10, 25, 30, 34, 44, 50]
 farthest_v = [0, 85, 145, 240, 315, 365, 430]
 farthest_labels = ['Start', 'Medkit', 'Peluru AR', 'Gloo Wall', 'Granat', 'Peluru SMG', 'Landmine']
-
-# ==========================================
+ 
 # 2. PENGATURAN VISUALISASI GRAFIK (1 Baris, 3 Kolom)
-# ==========================================
 fig, axes = plt.subplots(1, 3, figsize=(22, 6))
 
 def plot_knapsack_path(ax, w, v, labels, title, color):
@@ -55,9 +48,7 @@ def plot_knapsack_path(ax, w, v, labels, title, color):
     ax.set_xlim(-3, 55)
     ax.set_ylim(-20, 550)
 
-# ==========================================
 # 3. MENGGAMBAR KETIGA GRAFIK
-# ==========================================
 plot_knapsack_path(axes[0], greedy_w, greedy_v, greedy_labels,
                    'Rute Akumulasi Item (Greedy)\nTotal Nilai: 495 unit', '#3498db') # Biru
 

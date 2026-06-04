@@ -1,8 +1,5 @@
 import time
 
-# ==========================================
-# 1. PERSIAPAN DATA (Variabel yang sebelumnya hilang)
-# ==========================================
 items = [
     {"nama": "Gloo Wall", "berat": 5, "nilai": 95},
     {"nama": "Medkit", "berat": 10, "nilai": 85},
